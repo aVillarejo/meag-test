@@ -11,7 +11,7 @@ SERVER.applyMiddleware({
 // const PORT = process.env.PORT || 4000;
 // Express: Listener
 
-SERVER.listen({ port: process.env.PORT || 4000 }).then(({ url }) => {
+app.listen({ port: process.env.PORT || 4000 }).then(({ url }) => {
   console.log(`🚀 Server ready at ${url}`);
 });
 
