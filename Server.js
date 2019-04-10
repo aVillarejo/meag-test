@@ -1,0 +1,19 @@
+// Imports: Express
+import express from 'express';
+const APP = express();
+// Imports: GraphQL
+import SERVER from './graphql/schema.js';
+// Middleware: GraphQL
+  SERVER.applyMiddleware({
+  app: APP
+});
+// Express: Port
+const PORT = 4000 || process.env;
+// Express: Listener
+
+APP.listen(PORT, () => {
+  console.log(`Server started on port: ${PORT}`);
+  console.log(`http://localhost:${PORT}/graphql`);
+});
+// Exports
+export default APP;

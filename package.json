@@ -1,0 +1,27 @@
+{
+  "name": "meag-test",
+  "version": "1.0.0",
+  "description": "Test",
+  "main": "Server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "babel-node Server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "apollo-server-express": "2.4.8",
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "graphql": "^14.2.1",
+    "graphql-tools": "^4.0.4",
+    "mongoose": "5.4.8"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-stage-3": "^6.24.1",
+    "babel-register": "^6.26.0"
+  }
+}
