@@ -1,10 +1,10 @@
 // Imports: Express
-import express from 'express';
+import express from "express";
 const APP = express();
 // Imports: GraphQL
-import SERVER from './graphql/schema.js';
+import SERVER from "./graphql/Schema";
 // Middleware: GraphQL
-  SERVER.applyMiddleware({
+SERVER.applyMiddleware({
   app: APP
 });
 // Express: Port
