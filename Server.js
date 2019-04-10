@@ -8,7 +8,7 @@ SERVER.applyMiddleware({
   app: APP
 });
 // Express: Port
-const PORT = 4000 || process.env;
+const PORT = process.env.PORT || 4000;
 // Express: Listener
 
 APP.listen(PORT, () => {
