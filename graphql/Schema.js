@@ -8,7 +8,7 @@ const SERVER = new ApolloServer({
   typeDefs: TYPEDEFS,
   resolvers: RESOLVERS,
   playground: {
-    endpoint: `https://meag-test.herokuapp.com/graphql`,
+    //endpoint: `http://localhost:4000/graphql`,
     settings: {
       "editor.theme": "dark"
     }
